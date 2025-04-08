@@ -80,7 +80,7 @@
 
 ```
 
-7. Inverse Equilateral triangle
+7. Inverse Equilateral triangle:
 
 ```
 ***********
