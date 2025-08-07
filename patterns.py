@@ -49,6 +49,26 @@ class Patterns:
             print(space * " ", star * "*")
         print()
 
+    def diamond(self, n):
+        for row in range(1, n + 1):
+            space_up = n - row
+            star_up = 2 * row - 1
+            print(space_up * " ", star_up * "*")
+        for row in range(1, n + 1):
+            space_down = row
+            star = 2 * (n - row) - 1
+            print(space_down * " ", star * "*")
+
+    def halfDiamond(self, n):
+        for row in range(1, n + 1):
+            for col in range(row):
+                print("* ", end="")
+            print()
+        for row in range(1, n):
+            for col in range(n - row):
+                print("* ", end="")
+            print()
+
 
 sol = Patterns()
 # sol.sqrPattern(5)
@@ -58,4 +78,7 @@ sol = Patterns()
 # sol.inverseTriangle(6)
 # sol.inverseNumber(6)
 # sol.equiTriangle(6)
-sol.inverseEquiTriangle(6)
+# sol.inverseEquiTriangle(6)
+# sol.diamond(6)
+
+sol.halfDiamond(6)
